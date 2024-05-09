@@ -37,7 +37,7 @@ const Index = () => {
         </Flex>
         <Flex as="form" onSubmit={(e) => { e.preventDefault(); addTask(); }}>
           <Input placeholder="Add a new task" value={input} onChange={(e) => setInput(e.target.value)} />
-          <IconButton aria-label="Add task" icon={<FaPlus />} onClick={addTask} ml={2} />
+          <IconButton aria-label="Add task" icon={<FaPlus />} onClick={addTask} ml={2} style={{ backgroundColor: '#38A169' }} />
         </Flex>
         <List spacing={3} w="full">
           {tasks.map(task => (
